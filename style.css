@@ -24,8 +24,8 @@ html {
     min-height: 600px;
     max-width: calc(100% - 24px);
     border-radius: 16px;
-    background-color: #eee;
-    box-shadow: 0 0 60px #eee;
+    background-color: #bcbcbc;
+    box-shadow: 0 0 60px #bcbcbc;
 }
 
 .image {
