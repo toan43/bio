@@ -53,14 +53,33 @@ html {
 .item-1 .text .text-des {
     color: rgba(0, 0, 0, 0.7);
 }
-.text-3 {
-    /* Thay đổi giá trị này nếu cần */
-    text-align: center !important; /* Căn giữa nội dung bên trong */
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
-.text-3 .text-line {
-    font-size: 12px !important;
-    color: #050505; /* Cùng màu với đoạn văn để giữ sự nhất quán */
+.typing-demo {
+  width: 548ch;
+  animation: typing 40s steps(946), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 .bd {
     margin: 0 auto;
