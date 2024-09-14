@@ -18,6 +18,20 @@
 	25%, 75% {opacity: 0;}
 }
 
+@keyframes textEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animation {
+  animation: textEffect 2s ease-in-out;
+}
 .flash {
 	-webkit-animation-name: flash;
 	-moz-animation-name: flash;
