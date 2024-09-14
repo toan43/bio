@@ -50,6 +50,9 @@ html {
     font-size: 24px;
 }
 
+.item-1 .text .text-line {
+    font-size: 12px;
+}
 .item-1 .text .text-des {
     color: rgba(0, 0, 0, 0.7);
 }
