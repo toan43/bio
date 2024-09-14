@@ -54,7 +54,7 @@ html {
     color: rgba(0, 0, 0, 0.7);
 }
 .text-3 {
-    margin-top: 20px; /* Thay đổi giá trị này nếu cần */
+    /* Thay đổi giá trị này nếu cần */
     text-align: center !important; /* Căn giữa nội dung bên trong */
 }
 
