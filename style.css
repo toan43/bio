@@ -55,7 +55,7 @@ html {
 }
 .text-3 {
     margin-top: 20px; /* Thay đổi giá trị này nếu cần */
-    text-align: center; /* Căn giữa nội dung bên trong */
+    text-align: center !important; /* Căn giữa nội dung bên trong */
 }
 
 .text-3 .text-line {
