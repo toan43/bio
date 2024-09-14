@@ -54,7 +54,6 @@ html {
     color: rgba(0, 0, 0, 0.7);
 }
 .wrapper {
-  height: 10vh;
   /*This part is important for centering*/
   display: grid;
   place-items: center;
