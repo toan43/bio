@@ -50,13 +50,14 @@ html {
     font-size: 24px;
 }
 
-.item-1 .text .text-line {
-    font-size: 12px;
-}
 .item-1 .text .text-des {
     color: rgba(0, 0, 0, 0.7);
 }
+.item-3 .text
 
+.item-3 .text .text-line {
+    font-size: 12px;
+}
 .bd {
     margin: 0 auto;
     margin-top: 28px;
