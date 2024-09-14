@@ -148,11 +148,4 @@ html {
     border-radius: 50%;
 }
 
-.footer {
-    position: relative;
-    margin-top: 48px;
-    bottom: 12px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-}
+
