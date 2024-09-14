@@ -55,13 +55,13 @@ html {
 }
 .text-3 {
     margin-top: 20px; /* Thay đổi giá trị này nếu cần */
+    text-align: center; /* Căn giữa nội dung bên trong */
 }
 
 .text-3 .text-line {
     font-size: 12px !important;
     color: #050505; /* Cùng màu với đoạn văn để giữ sự nhất quán */
 }
-
 .bd {
     margin: 0 auto;
     margin-top: 28px;
