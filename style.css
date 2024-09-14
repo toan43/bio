@@ -54,6 +54,7 @@ html {
     color: rgba(0, 0, 0, 0.7);
 }
 .wrapper {
+  height: 10vh;
   /*This part is important for centering*/
   display: grid;
   place-items: center;
@@ -63,7 +64,7 @@ html {
   width: 548ch;
   animation: typing 40s steps(946), blink .5s step-end infinite alternate;
   white-space: nowrap;
-  overflow-wrap: break-word;
+  overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 20px;
@@ -147,4 +148,11 @@ html {
     border-radius: 50%;
 }
 
-
+.footer {
+    position: relative;
+    margin-top: 48px;
+    bottom: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
