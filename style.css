@@ -58,7 +58,7 @@ html {
 }
 
 .text-3 .text-line {
-    font-size: 12px;
+    font-size: 12px !important;
     color: #050505; /* Cùng màu với đoạn văn để giữ sự nhất quán */
 }
 
