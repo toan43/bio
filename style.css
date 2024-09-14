@@ -62,7 +62,7 @@ html {
 .typing-demo {
   width: 548ch;
   animation: typing 40s steps(946), blink .5s step-end infinite alternate;
-  white-space: pre-wrap;
+  white-space: nowrap;
   overflow-wrap: break-word;
   border-right: 3px solid;
   font-family: monospace;
