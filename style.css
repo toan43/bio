@@ -53,8 +53,9 @@ html {
 .item-1 .text .text-des {
     color: rgba(0, 0, 0, 0.7);
 }
-.item-3 .text
-
+.item-3 .text-3 {
+    margin-top: -32px;
+}
 .item-3 .text .text-line {
     font-size: 12px;
 }
