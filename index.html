@@ -1,42 +1,171 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toansdad_</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnBim</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;700&family=Bungee&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #FFD700;
+            color: #333;
+        }
+        nav a {
+            font-family: 'Bungee', cursive;
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .join-btn {
+            background-color: #007BFF;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .hero {
+            background-color: #FFD700;
+            color: #fff;
+            text-align: left;
+            padding: 80px 10%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero img {
+            max-width: 400px;
+            border-radius: 20px;
+        }
+        .hero-content {
+            max-width: 50%;
+        }
+        .buttons button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 10%;
+            background-color: #333;
+        }
+        .card {
+            background-color: #333;
+            padding: 20px;
+            flex: 1;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .education-section {
+            display: flex;
+            align-items: center;
+            padding: 80px 10%;
+            background-color: #fff;
+        }
+        .education-content {
+            flex: 1;
+        }
+        .education-content h2 {
+            font-size: 2.5em;
+            color: #222;
+        }
+        .education-content p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 15px 0;
+        }
+        .education-content a {
+            color: #007BFF;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        .education-image {
+            flex: 1;
+            text-align: right;
+        }
+        .education-image img {
+            max-width: 80%;
+            border-radius: 15px;
+        }
+        footer {
+            background-color: #FFD700;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="main">
-        <div class="container">
-            <div class="item-1">
-                <img src="bot.jpg" alt="Bot" class="image">
-                <div class="text">
-                    <h3 class="text-name text-center" style="color:#050505;">Phan Khánh Toàn</h3>
-                    <p class="text-des text-center">toansdad</p>
-                </div>
-            </div>
-            <div class="item-2 bd">
-                <h1 class="heading text-center">Social</h1>
-                <div class="list-item-2">
-                    <a href="https://www.facebook.com/khanhtoan.phan.165" class="social facebook"><img src="facebook.png" alt="Facebook" title="Facebook"></a>
-                    <a href="https://osu.ppy.sh/users/17346425" class="social osu"><img src="osu.png" alt="Osu" title="Osu"></a>
-                    <a href="https://www.instagram.com/phankhanhtoan_/" class="social instagram"><img src="instagram.png" alt="Instagram" title="Instagram"></a>
-                </div>
-
-            </div>
-            <div class="wrapper">
-                <div class="typing-demo">Welcome to my website
-                </div>
-            </div>
-
+    <header>
+        <div style="font-family: 'Lobster', cursive; font-size: 2em; font-weight: 900;">DnBim</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Giá cả</a>
+            <a href="#">Liên hệ</a>
+            
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 style="color: black; font-family: 'Bungee', cursive; font-weight: 900;">Hơn ? học viên tin tưởng chúng tôi</h1>
+            <p style="color: black; font-family: 'Bungee', cursive;">Chúng tôi hiểu cách các vật thể lớn hoạt động, nhưng những thứ ở quy mô nhỏ</p>
+            
+        </div>
+        <img src="student.jpg" alt="Student Image">
+    </section>
+    <div class="card-container">
+        <div class="card">
+            <img src="icon1.png" alt="Evaluation">
+            <h3 style="color: white;">Thời gian đánh giá</h3>
+            <p style="color: white;">???</p>
+        </div>
+        <div class="card">
+            <img src="icon2.png" alt="Giáo viên được chứng nhận">
+            <h3 style="color: white;">Giáo viên được chứng nhận</h3>
+            <p style="color: white;">???</p>
+        </div>
+        <div class="card">
+            <img src="icon3.png" alt="Thư viện sách">
+            <h3 style="color: white;">Thư viện sách</h3>
+            <p style="color: white;">???</p>
         </div>
     </div>
-    <script src="main.js"></script>
+    <section class="education-section">
+        <div class="education-content">
+            <h2>Làm cho giáo dục trực tuyến dễ tiếp cận hơn</h2>
+            <p>Những vấn đề cố gắng giải quyết xung đột giữa hai lĩnh vực chính của vật lý cổ điển: Cơ học Newton</p>
+            <a href="#">Tìm hiểu thêm →</a>
+        </div>
+        <div class="education-image">
+            <img src="education.jpg" alt="Education Image">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 DnBim. Mọi quyền được bảo lưu.</p>
+    </footer>
 </body>
-
 </html>
