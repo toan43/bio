@@ -1,151 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
-html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    background-attachment: fixed;
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+	overflow: hidden;
+	background: #f1c40f;
 }
 
-.text-center {
-    text-align: center;
+.flipbook {
+    width: 1300px;
+    height: 700px;
 }
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 86px;
-    margin-bottom: 86px;
-    width: 600px;
-    min-height: 600px;
-    max-width: calc(100% - 24px);
-    border-radius: 16px;
-    background-color: #bcbcbc;
-    box-shadow: 0 0 60px #bcbcbc;
+.flipbook .hard {
+    background: #c0392b !important;
+    color: #fff;
+    font-weight: bold;
+    border: none; 
 }
 
-.image {
-    margin: 0 auto;
-    transform: translateY(-45%);
-    display: block;
+.flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 14px;
 }
 
-.item-1 img {
-    width: 158px;
-    height: 158px;
-    border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 30px rgb(148, 196, 204);
+.flipbook .page {
+    background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    width: 1200px;
+    height: 600px;
 }
 
-.item-1 .text {
-    margin-top: -32px;
+.page img{
+	width: 90%;
+    height: 90%;
+	object-fit: cover;
+	margin: auto;
 }
 
-.item-1 .text .text-name {
-    font-size: 24px;
-}
-
-.item-1 .text .text-des {
-    color: rgba(0, 0, 0, 0.7);
-}
-.wrapper {
-  height: 10vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-
-.typing-demo {
-  width: 23ch;
-  animation: typing 10s steps(21), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 20px;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-.bd {
-    margin: 0 auto;
-    margin-top: 28px;
+.page iframe {
     width: 90%;
-    border: 5px outset rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
+    height: 90%;
+    border: none;
 }
 
-.bd.dark {
-    border: 2px solid rgba(255, 255, 255, 0.5);
+.flipbook .page small{
+	font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.item-2 {
-    margin-bottom: 48px;
+/* Specific style for the cover page */
+.flipbook .cover-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.heading {
-    margin: 0 auto;
-    width: 170px;
-    transform: translateY(-50%);
-    color: rgba(0, 0, 0, 0.7);
-    background-color: #bcbcbc;
-    display: block;
-}
-
-.item-2 .list-item {
-    margin: 0 auto;
-    margin-top: -12px;
-    width: 80%;
-    display: block;
-}
-
-.item-2 .item {
-    padding: 16px 0;
-    font-size: 18px;
-}
-
-.list-item-2 {
-    margin: 0 auto;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.social img {
-    margin: 8px 12px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 0 25px rgb(148, 196, 204);
-    transition: all 0.3s;
-}
-
-.social img:hover {
-    transform: scale(1.2);
-}
-
-.btn-mode {
-    position: fixed;
-    bottom: 36px;
-    right: 36px;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-}
-
-
