@@ -62,12 +62,16 @@
     $(document).ready(function() {
       var flipbook = $(".flipbook").turn();
       var currentPage = 1;
+      var totalPages = $(".flipbook").turn("pages");
 
       $("#nextBtn").click(function() {
         flipbook.turn("next");
         currentPage++;
         if (currentPage > 1) {
           $("#prevBtn").show();
+        }
+        if (currentPage >= totalPages - 1) {
+          $("#nextBtn").hide();
         }
       });
 
@@ -76,6 +80,23 @@
         currentPage--;
         if (currentPage === 1) {
           $("#prevBtn").hide();
+        }
+        if (currentPage < totalPages - 1) {
+          $("#nextBtn").show();
+        }
+      });
+
+      // Ensure the "Previous" button is hidden on the first page
+      $(".flipbook").bind("turning", function(event, page, view) {
+        if (page === 1) {
+          $("#prevBtn").hide();
+        } else {
+          $("#prevBtn").show();
+        }
+        if (page >= totalPages - 1) {
+          $("#nextBtn").hide();
+        } else {
+          $("#nextBtn").show();
         }
       });
     });
