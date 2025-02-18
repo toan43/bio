@@ -9,61 +9,76 @@
 </head>
 
 <body>
-  <div class="flipbook">
-    <div class="hard">HT CONSULTANT AND DESIGN COMPANY LIMITED <small>~ HT</small></div>
-    <div class="hard"></div>
-    <div class="cover-page">
-      <img src="images/cover.png" alt="" />  
+  <div class="flipbook-container">
+    <button id="prevBtn" class="flip-button" style="display: none;">Previous</button>
+    <div class="flipbook">
+      <div class="hard">HT CONSULTANT AND DESIGN COMPANY LIMITED <small>~ HT</small></div>
+      <div class="hard"></div>
+      <div class="cover-page">
+        <img src="images/cover.png" alt="" />  
+      </div>
+      <div>
+        <img src="images/img-1.png" alt="" />
+      </div>
+      <div>
+        <img src="images/img-2.png" alt="" />
+      </div>
+      <div>
+        <img src="images/img-3.png" alt="" />
+      </div>
+      <div>
+        <img src="images/img-4.png" alt="" />
+      </div>
+      <div>
+          <img src="images/img-5.png" alt="" />
+      </div>
+      <div>
+          <img src="images/img-6.png" alt="" />
+      </div>
+      <div>
+          <img src="images/img-7.png" alt="" />
+      </div>
+      <div>
+          <img src="images/img-8.png" alt="" />
+      </div>  
+      <div>
+        <iframe src="https://a360.co/41k8Mib" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe src="https://a360.co/41lfBjJ" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe src="https://a360.co/41ldKLR" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="hard"></div>
+      <div class="hard">Thank You <small></small></div>
     </div>
-    <div>
-      <img src="images/img-1.png" alt="" />
-      
-    </div>
-    <div>
-      <img src="images/img-2.png" alt="" />
-   
-    </div>
-    <div>
-      <img src="images/img-3.png" alt="" />
-
-    </div>
-    <div>
-      <img src="images/img-4.png" alt="" />
-  
-    </div>
-    <div>
-        <img src="images/img-5.png" alt="" />
-   
-    </div>
-    <div>
-        <img src="images/img-6.png" alt="" />
-   
-    </div>
-    <div>
-        <img src="images/img-7.png" alt="" />
-      
-    </div>
-    <div>
-        <img src="images/img-8.png" alt="" />
-   
-    </div>  
-    <div>
-      <iframe src="https://a360.co/41k8Mib" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div>
-      <iframe src="https://a360.co/41lfBjJ" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div>
-      <iframe src="https://a360.co/41ldKLR" width="941" height="1040" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="hard"></div>
-    <div class="hard">Thank You <small></small></div>
+    <button id="nextBtn" class="flip-button">Next</button>
   </div>
 
   <script src="jquery.js"></script>
   <script src="turn.js"></script>
   <script>
-    $(".flipbook").turn();
+    $(document).ready(function() {
+      var flipbook = $(".flipbook").turn();
+      var currentPage = 1;
+
+      $("#nextBtn").click(function() {
+        flipbook.turn("next");
+        currentPage++;
+        if (currentPage > 1) {
+          $("#prevBtn").show();
+        }
+      });
+
+      $("#prevBtn").click(function() {
+        flipbook.turn("previous");
+        currentPage--;
+        if (currentPage === 1) {
+          $("#prevBtn").hide();
+        }
+      });
+    });
   </script>
 </body>
 
